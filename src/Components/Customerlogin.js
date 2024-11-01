@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './AdminLogin.css';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 const Customerlogin = () => {
   const [showLoginForm, setShowLoginForm] = useState(true);
-  const [email, setemail] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +35,7 @@ const Customerlogin = () => {
       if (response.status === 200) {
         setIsLoggedIn(true);
         setErrorMessage('');
-        // Redirect to admin dashboard or perform further actions
+        navigate('/Userinterface'); // Redirect to user interface on successful login
       } else {
         setErrorMessage(data.message);
         setIsLoggedIn(false);
@@ -47,7 +48,7 @@ const Customerlogin = () => {
   return (
     <div>
       {/* Navbar stays fixed */}
-      <Navbar/>
+      <Navbar />
 
       {/* Sliding form */}
       {showLoginForm && (
@@ -61,7 +62,7 @@ const Customerlogin = () => {
                 className="form-control"
                 id="email"
                 value={email}
-                onChange={(e) => setemail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -76,9 +77,7 @@ const Customerlogin = () => {
                 required
               />
             </div>
-            <Link to='/Userinterface'>
             <button type="submit" className="btn btn-primary login-btn">Submit</button>
-            </Link>
             {errorMessage && <p className="error-text">{errorMessage}</p>}
           </form>
         </div>
