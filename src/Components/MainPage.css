@@ -1,0 +1,153 @@
+body {
+  background-color: #f4f4f4; /* Background color for the whole page */
+  font-family: Arial, sans-serif; /* Font style for the page */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.login {
+  top: 10px;
+}
+
+.login-container {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-card {
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 8px; /* Rounded corners for each card */
+  overflow: hidden; /* Prevent overflow of pseudo-element */
+  position: relative; /* Needed for absolute positioning of the line */
+}
+
+.login-card:hover {
+  transform: translateY(-10px);
+}
+
+.bg-admin {
+  background-color: #f0f8ff; /* Light background for Admin */
+}
+
+.bg-admin::before {
+  content: '';
+  position: absolute; /* Position the line absolutely within the card */
+  top: 0; /* Align to the top */
+  left: 0;
+  right: 0; /* Span across the card width */
+  height: 4px; /* Height of the line */
+  background-color: #337ab7; /* Color matching Admin icon */
+}
+
+.bg-customer {
+  background-color: #ffe0b2; /* Light background for Customer */
+}
+
+.bg-customer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #ff9800; /* Color matching Customer icon */
+}
+
+.bg-mentor {
+  background-color: #e1bee7; /* Light background for Mentor */
+}
+
+.bg-mentor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #9c27b0; /* Color matching Mentor icon */
+}
+
+.bg-register {
+  background-color: #e8f5e9; /* Light background for Register */
+}
+
+.bg-register::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #2ecc71; /* Color matching Register icon */
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #045629;
+  color: #fff;
+  border-color: #337ab7;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #045629;
+  border-color: #23527c;
+}
+
+.bg-admin, .bg-customer, .bg-mentor, .bg-register {
+  color: #babdb0;
+}
+
+.fa-user, .fa-user-tie, .fa-chalkboard-teacher {
+  margin-left: 0px;
+}
+
+.btn-admin {
+  background-color: #337ab7;
+}
+
+.btn-customer {
+  background-color: #ff9800; /* Button color for Customer */
+}
+
+.btn-mentor {
+  background-color: #9c27b0; /* Button color for Mentor */
+}
+
+.btn-register {
+  background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-card {
+    margin: 10px 0;
+  }
+}

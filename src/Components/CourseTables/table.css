@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 100px;
+    padding: 50px; /* Space for the navbar */
+}
+
+
+.progress-container {
+    background-color: rgb(8, 107, 47);
+    color: white;
+    width:20%;
+    height: 35px;
+    margin-left:1100px;
+    padding-top: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    position:relative;
+    margin-top: 20px; /* Space below the navbar */
+}
+
+/* Small line on top of progress container */
+.progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: white;
+    width: 0; /* Start at 0 width */
+    transition: width 0.5s ease;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    width: 100%;
+    background-color: ;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color:white;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #065606;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #129670;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Higher z-index to overlay above other content */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative; /* Position relative for close button positioning */
+  }
+  
+  .close-button {
+    background: #f44336; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space below the button */
+    position: absolute; /* Position absolute to allow placement at top right */
+    top: 10px; /* Top offset */
+    right: 10px; /* Right offset */
+  }
+  

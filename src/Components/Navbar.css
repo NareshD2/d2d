@@ -1,0 +1,39 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:30px;
+    background-color: #129670;
+    color: white;
+    box-shadow: 0 2px 5px #ccc2c21a;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Ensure both icon and title are centered */
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .title {
+    margin-left: 10px; /* Add margin between the icon and the title */
+    font-size: 10px;
+  }
+  
+  .bg-navbar {
+    background-color: hsl(146, 87%, 15%);
+  }
+  
+  .fa-road {
+    font-size: 30px; /* Adjust size of the road icon */
+  }
+  

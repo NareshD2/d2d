@@ -1,0 +1,127 @@
+.courses-container {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 40px;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .course-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .course-card i {
+    font-size: 48px;
+    color: #343a40;
+  }
+  
+  .course-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #606060;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .courses-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .course-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* Color for each icon */
+  .course-card i.fab.fa-python {
+    color: #3776AB;
+  }
+  
+  .course-card i.fab.fa-java {
+    color: #5382a1;
+  }
+  
+  .course-card i.fab.fa-html5 {
+    color: #e34f26;
+  }
+  
+  .course-card i.fab.fa-css3-alt {
+    color: #1572b6;
+  }
+  
+  .course-card i.fab.fa-js-square {
+    color: #f7df1e;
+  }
+  
+  .course-card i.fab.fa-bootstrap {
+    color: #563d7c;
+  }
+  
+  .course-card i.fab.fa-react {
+    color: #61dafb;
+  }
+  
+  .course-card i.fab.fa-node-js {
+    color: #83cd29;
+  }
+  
+  .course-card i.fas.fa-database {
+    color: #4DB33D; /* MongoDB and MySQL share the same class but differ in appearance */
+  }
+  
+  /* Optional for MySQL to differentiate */
+  .course-card i.fas.fa-database:last-child {
+    color: #00758F;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  
