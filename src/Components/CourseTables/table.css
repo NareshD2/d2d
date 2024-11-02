@@ -8,8 +8,8 @@ body {
 
 
 .progress-container {
-    background-color: rgb(8, 107, 47);
-    color: white;
+    background-color: rgb(210, 236, 220);
+    color: rgb(38, 107, 66);
     width:20%;
     height: 35px;
     margin-left:1100px;
@@ -29,7 +29,7 @@ body {
     top: 0;
     left: 0;
     height: 5px;
-    background-color: white;
+    background-color: rgb(37, 95, 57);
     width: 0; /* Start at 0 width */
     transition: width 0.5s ease;
 }
@@ -37,7 +37,7 @@ body {
 /* Progress bar styling */
 .progress-bar {
     width: 100%;
-    background-color: ;
+    background-color:rgb(218, 220, 218);
     height: 20px;
     border-radius: 10px;
     margin-top: 10px;
@@ -45,7 +45,7 @@ body {
 }
 
 .progress-fill {
-    background-color:white;
+    background-color:rgb(54, 83, 65);
     height: 100%;
     width: 0;
     transition: width 0.5s ease;
@@ -69,7 +69,7 @@ th, td {
 }
 
 th {
-    background-color: #065606;
+    background-color: #3e693e;
     color: white;
 }
 

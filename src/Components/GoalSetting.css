@@ -41,13 +41,13 @@
   input[type="text"]:focus,
   input[type="date"]:focus {
     outline: none;
-    border-color: #007bff;
+    border-color:hsl(147, 62%, 30%);
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
   }
   
   button[type="button"],
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: hsl(147, 62%, 30%);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -59,7 +59,7 @@
   
   button[type="button"]:hover,
   button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color:hsl(147, 62%, 30%);
   }
   
   .error {
@@ -73,7 +73,7 @@
   }
   
   ul li {
-    background-color: #e9ecef;
+   
     padding: 8px 12px;
     margin-bottom: 5px;
     border-radius: 4px;

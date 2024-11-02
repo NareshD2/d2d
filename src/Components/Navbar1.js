@@ -23,7 +23,7 @@ const Navbar1 = () => {
         <button className="close-btn" onClick={toggleSidebar}>&times;</button>
         <ul>
           <li>
-            <a href="/home">
+            <a href="/Userinterface">
               <i className="fas fa-home"></i> Home
             </a>
           </li>
