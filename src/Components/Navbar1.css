@@ -94,3 +94,26 @@
   color: white;
   cursor: pointer;
 }
+.user-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+  color:whitesmoke;
+}

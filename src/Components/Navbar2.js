@@ -50,16 +50,15 @@ const Navbar1 = () => {
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <button className="close-btn" onClick={toggleSidebar}>&times;</button>
         <ul>
-          <li><a href="/Userinterface"><i className="fas fa-home"></i> Home</a></li>
+          <li><a href="/Mentorinterface"><i className="fas fa-home"></i> Home</a></li>
           <li><a href="/courses"><i className="fas fa-book"></i> Courses</a></li>
-          <li><a href="#assignments"><i className="fas fa-tasks"></i> Assignments</a></li>
-          <li><a href="/set-goal"><i className="fas fa-bullseye"></i> Set Goal</a></li>
-          <li><a href="#activities"><i className="fas fa-running"></i> Activities</a></li>
-          <li><a href="/userfeedback"><i className="fas fa-comment"></i> Feedbacks</a></li>
-          <li><a href="#progress"><i className="fas fa-chart-line"></i> Progress</a></li>
-          <li><a href="#motivational-videos"><i className="fas fa-video"></i> Motivational Videos</a></li>
-          <li><a href="/Userjobalerts"><i className="fas fa-bell"></i> Job Alerts</a></li>
-          <li><a href="#notifications"><i className="fas fa-envelope"></i> Notifications</a></li>
+          <li><a href="/assignments"><i className="fas fa-tasks"></i> Assignments</a></li>
+          <li><a href="/activities"><i className="fas fa-running"></i> Activities</a></li>
+          <li><a href="/MentorFeedBack"><i className="fas fa-comment"></i> Feedbacks</a></li>
+          <li><a href="/trackprogress"><i className="fas fa-chart-line"></i> Track Progress</a></li>
+          <li><a href="/motivational-videos"><i className="fas fa-video"></i> Motivational Videos</a></li>
+          <li><a href="/MentorPosts"><i className="fas fa-bell"></i> Job Alerts</a></li>
+          <li><a href="/notifications"><i className="fas fa-envelope"></i> Notifications</a></li>
         </ul>
       </div>
     </div>

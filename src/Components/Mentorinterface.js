@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Userinterface.css';
-import Navbar1 from './Navbar1';
+import Navbar2 from './Navbar2';
  // Ensure the file name is correct
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import {jwtDecode} from 'jwt-decode'; // Use default import for jwt-decode
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const Userinterface = () => {
+const Mentorinterface = () => {
   const courseProgress = 85;
   const labProgress = 10;
   const assignmentProgress = 60;
@@ -56,7 +56,7 @@ const Userinterface = () => {
 
   return (
     <div className="progress-page1">
-      <Navbar1 />
+      <Navbar2 />
       <div className="progress-container-row">
         <div className="progress-item">
           <h2>Courses</h2>
@@ -127,4 +127,4 @@ const Userinterface = () => {
   );
 };
 
-export default Userinterface;
+export default Mentorinterface;
